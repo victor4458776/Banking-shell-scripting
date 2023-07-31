@@ -1,0 +1,19 @@
+# CREATE BUY OPTIONS FOR CLIENTS
+# client-reference-id	Use client-reference-id to attach a unique string of your choice to the Checkout Session. 
+# The string can be a customer ID or a cart ID (or similar) that you use to reconcile the Session with your internal systems. 
+# If you pass this parameter to your <stripe-buy-button>, it’s sent in the checkout.session.completed webhook upon payment completion.
+
+  <body>
+  <h1>Purchase your new kit</h1>
+  <!-- Paste your embed code script here. -->
+  <script
+    async
+    src="https://js.stripe.com/v3/buy-button.js">
+  </script>
+  <stripe-buy-button
+    buy-button-id="{{BUY_BUTTON_ID}}"
+    publishable-key="pk_test_Dt4ZBItXSZT1EzmOd8yCxonL"
+  >
+  </stripe-buy-button>
+</body>
+
